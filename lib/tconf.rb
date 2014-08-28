@@ -42,8 +42,8 @@ module Tconf
 
     extend ClassConfig
 
-    attr_config :languages, %w(es en pt)
-    attr_config :path, Pathname.new(Dir.pwd).join('config', 'locales')
+    attr_config :languages,    %w(es en pt)
+    attr_config :path,         Pathname.new(Dir.pwd).join('config', 'locales')
     attr_config :default_file, 'translations'
 
     def self.[](key)
